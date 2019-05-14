@@ -27,6 +27,7 @@ This project aims to design and test a customized model of Markov Decision Proce
 <b> Reasons for Multi Agent Reinforcement Learning to be the best approach for solution </b>
 
 <b> <u> M<<N </b> </u>
+
 1.  Consider the use case where M=50 (50 bots) and N=1000 (1000 Target Points)
 2. The total number of possible paths is in order of 10^90 which is much greater than the generic use cases of 20 possible paths
 3.  The environment is unexplored, meaning that location of all the 1000 points is unknown, The bots need to explore and simultaneously learn to move efficiently in the environment. Absence of exact knowledge of environment rules out the validity of deterministic algorithms.
