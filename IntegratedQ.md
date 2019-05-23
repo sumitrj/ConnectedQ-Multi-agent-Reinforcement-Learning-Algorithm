@@ -1,4 +1,4 @@
-## Propsed Version of Q - Learning Algorithm for Multi Agent Path Planning System
+## Proposed Version of Q - Learning Algorithm for Multi Agent Path Planning System
 
 <b> <u> Representation of state of the system </b> </u>
 
