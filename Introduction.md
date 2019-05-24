@@ -32,3 +32,5 @@ This project aims to design and test a customized model of Markov Decision Proce
 2. The total number of possible paths is in order of 10^90 which is much greater than the generic use cases of 20 possible paths
 3.  The environment is unexplored, meaning that location of all the 1000 points is unknown, The bots need to explore and simultaneously learn to move efficiently in the environment. Absence of exact knowledge of environment rules out the validity of deterministic algorithms.
 
+In this project, the notion of multi-agent envronment is implemented using a novel method which we call <b> ConnectedQ </b>
+
