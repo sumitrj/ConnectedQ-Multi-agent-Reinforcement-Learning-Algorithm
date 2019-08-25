@@ -187,10 +187,9 @@ An episode of training can be described as follows:
 		scores.append(EpisodePenalty) 
 		policies.append(policy)
 	
-	NextStateByQ(Initial_State):
-		s = 0
-		for i in range ( length ( Q[Initial_State] ) ):
-			if(Q[Initial_State][i]<Q[Initial_State][m]):
-				s = i
-		return StateSpace[s]
-		
+	NextStateByQ(Initial_State,Visited):
+		Next_State = Initial_State + 1
+		for i in Visited:
+			if(Q[Initial_State][Next_State]>Q[Initial_State][i]):
+				min_i = i
+		return Next_State
