@@ -1,5 +1,5 @@
 ## ConnectedQ
-### Proposed alternative of Q Learning for Multi Agent System applied in this use case for Path Planning
+#### Proposed alternative of Q Learning for Multi Agent System applied in this use case for Path Planning
 
 <b> <u> Representation of state of the system </b> </u>
 
@@ -131,7 +131,7 @@ An episode of training can be described as follows:
 			policy.append(next_state)
 			Visited = Union( Visited , set(next_state) )
 			EpisodePenalty = EpisodePenalty + Penalty(current_state, next_state)
-			Q[current_state][next_state] = Penalty(current_state, next_state) + G*max(Q[current_state][next_state])
+			Q[current_state][next_state] = Penalty(current_state, next_state) + G*min(Q[next_state])
 			current_state = next_state 
 			
 		scores.append(EpisodePenalty)
@@ -180,11 +180,10 @@ An episode of training can be described as follows:
 	EpisodePenalty = 0 
 		
 		while( isSuperSet ( AllPoints, Visited ) ): 
-			next_state = NextStatebyQ( Visited ) 
+			next_state = NextStatebyQ(current_state) 
 			policy.append(next_state) 
 			Visited = Union( Visited , set(next_state) ) 
 			EpisodePenalty = EpisodePenalty + Penalty(current_state, next_state)
-			Q[current_state][next_state] = Penalty(current_state, next_state) + G*max(Q[current_state][next_state])
 		scores.append(EpisodePenalty) 
 		policies.append(policy)
 	
