@@ -183,7 +183,9 @@ An episode of training can be described as follows:
 			policy.append(next_state) 
 			Visited = Union( Visited , set(next_state) ) 
 			EpisodePenalty = EpisodePenalty + Penalty(current_state, next_state)
-			Q[current_state][next_state] = Penalty(current_state, next_state) + G*max(Q[next_state]) current_state = next_state scores.append(EpisodePenalty) policies.append(policy)
+			Q[current_state][next_state] = Penalty(current_state, next_state) + G*max(Q[current_state][next_state])
+		scores.append(EpisodePenalty) 
+		policies.append(policy)
 	
 	NextStateByQ(Initial_State):
 		s = 0
