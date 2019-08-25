@@ -2,7 +2,7 @@
 
 <b><u>Abstract Definition:</b></u>
 
-There 'N' points on a 2D plane which need to be visited at least once by 'M' bots.
+Consider 'N' points on a 2D plane which need to be visited at least once by 'M' bots.
 Provide a path for all of the 'M' bots such that the total distance travelled by the bots is minimum.
 
 <b><u>Consider the following </b></u>
