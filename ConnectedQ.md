@@ -191,5 +191,5 @@ An episode of training can be described as follows:
 		Next_State = Initial_State + 1
 		for i in Visited:
 			if(Q[Initial_State][Next_State]>Q[Initial_State][i]):
-				min_i = i
+				Next_State = i
 		return Next_State
