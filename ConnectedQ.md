@@ -1,4 +1,5 @@
-## Proposed Version of Q - Learning Algorithm for Multi Agent Path Planning System
+## ConnectedQ
+### Proposed alternative of Q Learning for Multi Agent System applied in this use case for Path Planning
 
 <b> <u> Representation of state of the system </b> </u>
 
