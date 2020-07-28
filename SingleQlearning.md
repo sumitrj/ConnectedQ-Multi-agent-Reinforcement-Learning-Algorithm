@@ -7,8 +7,6 @@
 
 3. If at any point of time the agent ends up in one of the terminating states that means there are no further transition possible. This is the condition of completion of an <u> episode. </u>
 
-![State Change Depiction](https://photos.google.com/album/AF1QipMXRnigPDVuNWmW01qr5mp6oBVAwSBqcZbqNvaM/photo/AF1QipM3NHiJniq7r1N_nDw8WbL4I_L-RwzO8QrHYYsn)
-
 While transiting states, it is vital to have a notion of the reward which could be obtained in the furture transitions after completion of the current transition, hence providing a metric of the quality of the current transition.
 
 <b> This is achieved by the Value matrix. </b>
